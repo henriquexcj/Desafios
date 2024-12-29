@@ -2,25 +2,20 @@ body {
     background-color: black;
     color: white;
     font-family: Arial, Helvetica, sans-serif;
+   
+    text-align: center;
 }
-p {
-    color: white;
-    border-color: white;
-    border-width: 2000px;
-    border: 500px;
-    border-spacing: 10px;
-    
-}
+
 iframe {
     border-width: 5px;
     border-color: white;
     border-radius: 10px;
+    align-self: center;
 }
 
-img {
-    border-width: 50px;
-    border-color: white;
-    border-radius: 10px;
-    border-left: 50px;
-    border-image: 15px;
+#back {
+   background-color: white;
+   border-radius: 10px;
 }
+
+
