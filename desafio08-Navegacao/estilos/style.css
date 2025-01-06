@@ -1,0 +1,39 @@
+body {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 20px;
+}
+
+#home {
+    background-color: black;
+    color: white;
+}
+
+#branco {
+    background-color: white;
+    color: black;
+}
+
+#vermelhoR {
+    background-color: crimson;
+    color: white;
+}
+
+#mata {
+    background-color: darkgreen;
+    color: white;
+}
+
+#campo {
+    background-color: greenyellow;
+
+}
+
+#deserto {
+    background-color: bisque;
+
+}
+
+#vila {
+    background-color: maroon;
+    color: white;
+}
