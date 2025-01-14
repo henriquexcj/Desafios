@@ -13,7 +13,30 @@ iframe {
     align-self: center;
 }
 
+image {
+    display: inline;
+}
+
 #back {
    background-color: white;
    border-radius: 10px;
 }
+
+.videosClick {
+    border: 5px solid dimgray;
+    border-radius: 8px;
+    margin: 5px;
+    width: 300px;
+}
+
+a {
+    color: black;
+    display: inline;
+
+}
+
+img:hover {
+    outline: 3px solid rgb(153, 153, 153);
+}
+    
+
