@@ -17,6 +17,7 @@ body {
 header {
     text-align: center;
     background-color: #036322;
+    
     color: white;
     padding-top: 30px;
     margin-bottom: 0px;
@@ -29,7 +30,11 @@ header > h1 {
 
 header > nav {
     text-align: left;
-    margin-left: 5px;
+    margin-left: 8px;
+}
+
+nav {
+    padding-bottom: 10px;
 }
 
 nav > a {
@@ -38,6 +43,11 @@ nav > a {
     font-weight: bold;
     color: white;
     padding: 8px;
+}
+
+nav > a:hover {
+    background-color: #037c29d5;
+    border-radius: 10px;
 }
 
 main {
@@ -52,6 +62,10 @@ main {
     
 }
 
+article > p {
+    text-align: justify;
+}
+
 article > h1 {
     font-family: 'Idroid', sans-serif;
     color: #036322;
@@ -63,7 +77,13 @@ article > h3 {
     color: #036322;
 }
 
+picture {
+    text-align: center;
+    margin: auto;
+    display: block;
+}
 source {
+    align-self: center;
     margin: auto;
 }
 
