@@ -1,8 +1,8 @@
-
+@charset "UTF-8";
 
 @font-face {
     font-family: 'Idroid';
-    src: url('fontes/idroid.oft') format('opentype');
+    src: url('../fontes/idroid.otf') format('OpenType');
     font-weight: normal;
     font-style: normal;
 }
@@ -21,6 +21,10 @@ header {
     padding-top: 30px;
     margin-bottom: 0px;
     box-shadow: 0px 2px 10px 0px rgba(0, 0, 0, 0.473);
+}
+
+header > h1 {
+    font-family: 'Idroid', sans-serif;
 }
 
 header > nav {
@@ -45,6 +49,22 @@ main {
     margin: auto;
     border-radius: 0px 0px 10px 10px;
     box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.473);
+    
+}
+
+article > h1 {
+    font-family: 'Idroid', sans-serif;
+    color: #036322;
+    font-size: 1.5em;
+}
+
+article > h3 {
+    font-family: 'Idroid', sans-serif;
+    color: #036322;
+}
+
+source {
+    margin: auto;
 }
 
 footer {
