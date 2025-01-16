@@ -82,6 +82,11 @@ article > h3 {
     color: #036322;
 }
 
+h3 {
+    background-image: linear-gradient(to right, #96f5a19f , white);
+    padding-left: 5px;
+}
+
 picture {
     margin:  30px auto;
     display: block;
@@ -94,7 +99,25 @@ img {
 
 iframe {
     display: block;
+    margin: 20px auto;
+    
+}
+
+ul {
+    width: 400;
     margin: auto;
+    align-self: center;
+    margin-right: 50px;
+}
+
+li {
+    width: 400px;
+    align-self: center;
+}
+
+aside {
+    display: inline;
+    margin: 0px auto 0px 300px;
 }
 
 footer {
