@@ -13,6 +13,7 @@ usar váriaveis em css pode facilitar muitas coisas
 */
 
 :root{
+    --verdeCT: hsla(147, 49%, 85%, 0.5);
     --verdeC: #c5ebd6;
     --verdeCN: #83e1ad;
     --verdeN: #3ddc84;
@@ -35,17 +36,49 @@ body {
     font-family: var(--fontePadrao);
 }
 
-header>h1 {
-    color: var(--verdeME);
-    font-family: var(--fonteDestaque);
+header {
+    background-image: linear-gradient(var(--verdeNE), var(--verdeME));
+    min-height: 150px;
+    text-align: center;
+    padding-top: 40px;
 }
 
-header {
-    background-image: linear-gradient(var(--verdeC), var(--verdeE));
+header > h1 {
+    color: white;
+    font-family: var(--fonteDestaque);
+    margin-bottom: 20px;
+    font-size: 3em;
+    text-shadow: 2px 2px 0 rgba(0, 0, 0, 0.2);
+}
+
+header > p {
+    font-family: var(--fontePadrao);
+    color: white;
+    font-size: 1.2em;
+    max-width: 600px;
+    margin: auto;
+    padding: 0 10px;
+    text-shadow: 2px 2px 0 rgba(0, 0, 0, 0.3);
 }
 
 nav {
-    background-color: var(--verdeE);
+    background-color: var(--verdeME);
+    padding: 10px;
+    box-shadow: 0px 5px 10px hsla(0, 0%, 0%, 0.4);
+}
+
+nav > a {
+    color: white;
+    padding: 10px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    transition-duration: 0.3s;
+}
+
+nav > a:hover {
+    background-color: var(--verdeN);
+    color: var(--verdeE);
 }
 
 main {
@@ -59,7 +92,28 @@ main {
     margin: auto;
     margin-bottom: 30px;
 
-    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.4);
+}
+
+main h1 {
+    color: var(--verdeME);
+    font-family: var(--fonteIdroid);
+}
+
+main h2 {
+    color: var(--verdeE);
+    font-family: var(--fonteIdroid);
+    font-size: 1.3em;
+    background-image: linear-gradient(to right, var(--verdeCN), transparent);
+    text-indent: 8px;
+}
+
+main p {
+    margin: 15px 0;
+    text-align: justify;
+    text-indent: 22px;
+    line-height: 2em;
+    font-size: 1em;
 }
 
 main img {
@@ -72,14 +126,25 @@ main img.pequena {
     width: 50%;
 }
 
-main h1 {
-    color: var(--verdeME);
-    font-family: var(--fonteIdroid);
+main strong{
+    color: var(--verdeE);
+    font-weight: bolder;
 }
 
-main h2 {
+main a {
+    text-decoration: none;
+    font-weight: bolder;
     color: var(--verdeME);
-    font-family: var(--fonteIdroid);
+    background-color: var(--verdeCT);
+    padding: 2px 4px;
+}
+
+main a:hover {
+    text-decoration: underline;
+}
+
+main a::after {
+    content: '🔗';
 }
 
 footer {
