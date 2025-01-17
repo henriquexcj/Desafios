@@ -2,6 +2,87 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
 
-body {
-    background-color: #c5ebd6;
+
+@font-face {
+    font-family: 'Idroid';
+    src: url(../fontes/idroid.otf);
+    font-weight: normal;
 }
+/*
+usar váriaveis em css pode facilitar muitas coisas
+*/
+
+:root{
+    --verdeC: #c5ebd6;
+    --verdeCN: #83e1ad;
+    --verdeN: #3ddc84;
+    --verdeNE: #2fa866;
+    --verdeE: #1a5c37;
+    --verdeME: #063d1e;
+
+    --fontePadrao: Arial, Verdana, Helvetica, sans-serif;
+    --fonteDestaque: 'Bebas Neue', cursive;
+    --fonteIdroid: 'Idroid', cursive;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: var(--verdeC);
+    font-family: var(--fontePadrao);
+}
+
+header>h1 {
+    color: var(--verdeME);
+    font-family: var(--fonteDestaque);
+}
+
+header {
+    background-image: linear-gradient(var(--verdeC), var(--verdeE));
+}
+
+nav {
+    background-color: var(--verdeE);
+}
+
+main {
+    background-color: white;
+    padding: 20px;
+    border-radius: 0 0 10px 10px;
+
+    max-width: 1000px;
+    min-width: 300px;
+
+    margin: auto;
+    margin-bottom: 30px;
+
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+}
+
+main img {
+    width: 100%;
+}
+
+main img.pequena {
+    display: block;
+    margin: auto;
+    width: 50%;
+}
+
+main h1 {
+    color: var(--verdeME);
+    font-family: var(--fonteIdroid);
+}
+
+main h2 {
+    color: var(--verdeME);
+    font-family: var(--fonteIdroid);
+}
+
+footer {
+    background-color: var(--verdeME);
+}
+
