@@ -143,20 +143,29 @@ main a:hover {
     text-decoration: underline;
 }
 
-main a::after {
-    content: '🔗';
+a.externo::after {
+    content: '\00A0\1F517';
 }
 
 aside {
     background-color: var(--verdeCN);
     padding: 10px;
     border-radius: 10px;
+    box-shadow: 3px 3px 8px rgba(0, 0, 0, 0.2);
+}
+
+aside > h3 {
+    background-color: var(--verdeE);
+    color: white;
+    padding: 10px;
+    margin: -10px -10px 0 -10px;
+    border-radius: 10px 10px 0 0;
 }
 
 aside > ul {
+    list-style-type: '\1F5F8\00A0\00A0';
     list-style-position: inside;
-    columns: 2;
-    
+    columns: 2; 
 }
 
 footer {
