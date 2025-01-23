@@ -49,6 +49,7 @@ header > h1 {
     margin-bottom: 20px;
     font-size: 3em;
     text-shadow: 2px 2px 0 rgba(0, 0, 0, 0.2);
+    font-weight: normal;
 }
 
 header > p {
@@ -59,6 +60,7 @@ header > p {
     margin: auto;
     padding: 0 10px;
     text-shadow: 2px 2px 0 rgba(0, 0, 0, 0.3);
+    margin-bottom: 20px;
 }
 
 nav {
@@ -98,6 +100,7 @@ main {
 main h1 {
     color: var(--verdeME);
     font-family: var(--fonteIdroid);
+    font-weight: normal;
 }
 
 main h2 {
@@ -106,6 +109,7 @@ main h2 {
     font-size: 1.3em;
     background-image: linear-gradient(to right, var(--verdeCN), transparent);
     text-indent: 8px;
+    font-weight: normal;
 }
 
 main p {
@@ -141,6 +145,22 @@ main a {
 
 main a:hover {
     text-decoration: underline;
+}
+
+div.video {
+    background-color: var(--verdeME);
+    margin: 0 -20px 30px -20px;
+    padding: 20px;
+    padding-bottom: 56.6%;
+    position: relative;
+}
+
+div.video > iframe {
+    position: absolute;
+    top: 5%;
+    left: 5%;
+    width: 92%;
+    height: 92%;
 }
 
 a.externo::after {
