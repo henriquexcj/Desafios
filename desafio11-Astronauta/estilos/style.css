@@ -1,0 +1,26 @@
+body {
+    margin: 0%;
+}
+
+div {
+    display: block;
+    width: 100%;
+    height: 100%;
+    background-image: url(../imagens/espaco.jpg);
+    background-repeat: no-repeat;
+}
+
+img#space {
+    position: relative;
+    display: block;
+    width: 100%;
+    width: auto;
+    
+}
+
+img#astro {
+    position: relative;
+    margin: auto;
+    top: 10%;
+    width: 100%;
+}
