@@ -1,26 +1,23 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
 body {
-    margin: 0%;
-}
-
-div {
-    display: block;
-    width: 100%;
-    height: 100%;
     background-image: url(../imagens/espaco.jpg);
+    background-position:  center;
     background-repeat: no-repeat;
+    background-size: cover;
+    max-height: max-content;
 }
 
-img#space {
-    position: relative;
+main {
+
+}
+
+
+img {
+    margin: 25% auto 15% auto;
+
     display: block;
-    width: 100%;
-    width: auto;
-    
-}
-
-img#astro {
-    position: relative;
-    margin: auto;
-    top: 10%;
-    width: 100%;
 }
