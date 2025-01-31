@@ -1,13 +1,25 @@
 @charset "UFT-8";
 
+@import url('https://fonts.googleapis.com/css2?family=Passion+One:wght@400;700;900&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Sriracha&display=swap');
+
+:root {
+    --fonte01: Verdana, Arial, Helvetica, sans-serif;
+    --fonte02: 'Passion One', cursive;
+    --fonte03: 'Sriracha', cursive;
+}
+
 * {
     margin: 0;
     padding: 0;
+    font-size: 1em;
 }
 
 html, body {
     min-height: 100%;
     background-color: bisque;
+    font-family: var(--fonte01);
 }
 
 header {
@@ -21,6 +33,8 @@ header >h1 {
     padding-top: 50px;
     /*text-transform: uppercase; deixa tudo maiusculo*/
     font-variant: small-caps; /*deixa tudo maiusculo, porem as iniciais continuam sendo as maiores, ou seja, as minusculas tem o mesmo glifo das maiusculas, mas continuam pequenas.*/
+    font-family: var(--fonte02);
+    font-size: 3.5em;
 }
 
 header >p {
@@ -42,6 +56,13 @@ section {
     padding-left: 30px;
 
     line-height: 2em;
+    font-family: var(--fonte03);
+    font-size: 1.2em;
+}
+
+section > p {
+    display: inline-block;
+    padding: 10px;
 }
 
 section.normal {
@@ -57,7 +78,6 @@ section.imagem {
 
 section.imagem > p {
     background-color: rgba(0, 0, 0, 0.2);
-    width: 400px;
 }
 
 footer {
