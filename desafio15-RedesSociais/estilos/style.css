@@ -75,6 +75,7 @@ div#celular {
 }
 
 nav {
+    padding-top: 2vh;
     padding-left: 86vw;
 }
 
@@ -91,8 +92,8 @@ img.botao {
 }
 
 img.botao:hover {
-    border-inline-start: 10px;
-    border-inline-color: gray;
+    border: 2px solid rgba(255, 255, 255, 0.5);
+    transform: translate(-2px,-2px);
 }
 
 iframe {
