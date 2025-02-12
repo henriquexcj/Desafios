@@ -1,7 +1,7 @@
 @charset "UTF-8";
 
 * {
-    border: 0;
+    margin: 0;
     padding: 0;
 }
 
@@ -10,19 +10,101 @@ body {
     background-size: cover;
 
     height: 98vh;
+    margin: 0;
+    padding: 0;
 }
 
-iframe {
-    background: transparent url(../imagens/frame-iphone.png) center no-repeat fixed;
+body#home {
+    background: black url(../imagens/tela-home.jpg) center no-repeat scroll;
+    background-size: cover;
 
-    background-size: contain;
+    height: 100vh;
+}
 
+body#github {
+    background: black url(../imagens/tela-github.jpg) center no-repeat scroll;
+    background-size: cover;
+
+    height: 200vh;
+}
+
+body#facebook {
+    background: black url(../imagens/tela-facebook.jpg) center no-repeat scroll;
+    background-size: cover;
+
+    height: 529vh;
+
+}
+
+body#instagram {
+    background: black url(../imagens/tela-instagram.jpg) center no-repeat scroll;
+    background-size: cover;
+
+    height: 451vh;
+}
+
+body#twitter {
+    background: black url(../imagens/tela-twitter.jpg) center no-repeat scroll;
+    background-size: cover;
+
+    height: 567vh;
+}
+
+body#youtube {
+    background: black url(../imagens/tela-youtube.png) center no-repeat scroll;
+    background-size: cover;
+
+    height: 267vh;
+}
+
+div#celular {
     position: absolute;
     top: 50%;
     left: 50%;
 
     transform: translate(-50%, -50%);
 
-    height: 600px;
-    width: 400px;
+    background: transparent url(../imagens/frame-iphone.png) center no-repeat fixed;
+
+    background-size: contain;
+
+    height: 80vh;
+    width: 40vh;
+
+    align-items: center;
+}
+
+nav {
+    padding-left: 86vw;
+}
+
+li {
+    list-style-type: none;
+}
+
+img.botao {
+    height: 60px;
+    width: 60px;
+
+    border-radius: 100%;
+    
+}
+
+img.botao:hover {
+    border-inline-start: 10px;
+    border-inline-color: gray;
+}
+
+iframe {
+    display: block;
+    margin: auto;
+    margin-top: 10.3vh;
+
+    height: 60vh;
+    width: 34.1vh;
+
+    scrollbar-width: 1px;
+    overflow: hidden;
+
+    border-radius: 3px;
 }
