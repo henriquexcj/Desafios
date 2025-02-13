@@ -45,3 +45,29 @@ iframe#tela {
     width: 269px;
     height: 471px;
 }
+
+/*AQUI EM BAIXO é o que chamou a sua atenção, tem algumas coisinhas que voc6e tentou fazer, mas não deu certo lá, aqui está as configurações*/
+
+section#redes-sociais {
+    text-align: right;
+}
+
+section#redes-sociais a img {
+    width: 50px;
+    
+    margin: 10px;
+
+    border-radius: 50%; /*com 50% ja deixa redondo, se quiser manter os 100% acho q tanto faz*/
+
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+    box-sizing: border-box; /*Isso faz com que a borda faça parte do mesmo espaço do item, então ele vai dimonuir um pouquinho para dar espaço para a borda.
+    Então como a borda está no hover ali em baixo ela vai aparecer quando voc6e passar o mouse por cima.
+    */
+}
+
+section#redes-sociais img:hover {
+    border: 2px solid rgba(255, 255, 255, 0.6);
+    transform: translate(-2px,-2px); /*essa é a ideia que você não pensou em fazer, mas fica legal. quando passa o mouse por cima o botão mexe um pouco, assim vc percebe que da para clicar.*/
+    box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.6); /*como o botão se macheu, vc pode aumantar a sombra para tentar simular que ele se levantou ao invez de ter saido do lugar, então tentar fazer expandir a sombra pra tampar o lugar que ela estava antes pode dar a impressão de que o botão se levantou*/
+    transition: transform 0.2s, border 0.1s; /*Tu esqueceu completamente disso, mas isso serve para vc colocar um tempo nas animações, o que pode dar um chan a mais pra ver o efeito sendo feito. */
+}
