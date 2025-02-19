@@ -53,8 +53,9 @@ section#login-web {
     position: relative;
     top: 35vh;
 
-
-    height: 30.7vh;
+    box-sizing: border-box;
+    height: 35vh;
+    width: 90vw;
 
     background-color: white;
 
@@ -84,17 +85,43 @@ div.login-dados {
     background-color: var(--corPrincipal);
     display: inline-block;
     
+    
+
     padding: 5px 10px;
     border-radius: 5px;
     margin: 5px auto;
 }
 
 form img {
+    position: relative;
     width: 20px;
+    top: 4px;
+    padding-right: 2px;
 }
 
-form input {
-    line-height: 25px;
+form input.dados {
+    border: 2px solid white;
+    line-height: 20px;
     border-radius: 5px;
-    border: none;
+    width: 60vw;
+    padding: 5px;
+    max-width: 520px
+}
+
+.botao {
+    width: 73vw;
+    padding: 5px;
+    border-radius: 5px;
+    font-size: 1.1em;
+    box-sizing: border-box;
+    margin-top: 10px;
+    max-width: 520px
+}
+
+.entrar {
+    background-color: blue;
+}
+
+.semsenha {
+    text-decoration: none;
 }
