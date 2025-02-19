@@ -1,0 +1,100 @@
+@charset "UTF=8";
+
+:root {
+    --corPrincipal: #F2C572;
+    --cor02: #0C0D0A;
+    --corSecundaria: #BFBFBF;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html, body {
+    background-color: var(--corPrincipal);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+
+    width: 100vw;
+    height: 100vh;
+}
+
+body {
+    position: relative;
+}
+
+main {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    background-image: black url(../imagens/xicaramarela.jpg);
+
+    border-radius: 10px;
+
+    box-shadow: 0px 0px 6px rgba(0, 0, 0, 0.4);
+
+    box-sizing: border-box;
+
+    height: 70vh;
+    width: 90vw;
+
+    background: black url(../imagens/xicaramarela.jpg) no-repeat right fixed;
+    background-size: cover;
+}
+
+section {
+    position: relative;
+    display: inline-block;
+}
+
+section#login-web {
+    position: relative;
+    top: 35vh;
+
+
+    height: 30.7vh;
+
+    background-color: white;
+
+    padding: 20px;
+
+    border-radius: 0 0 10px 10px;
+    
+
+}
+
+section h1 {
+    padding-bottom: 20px;
+    text-align: center;
+    font-size: 2em;
+}
+
+section p {
+    text-align: justify;
+    padding-bottom: 20px;
+}
+
+form {
+    text-align: center;
+}
+
+div.login-dados {
+    background-color: var(--corPrincipal);
+    display: inline-block;
+    
+    padding: 5px 10px;
+    border-radius: 5px;
+    margin: 5px auto;
+}
+
+form img {
+    width: 20px;
+}
+
+form input {
+    line-height: 25px;
+    border-radius: 5px;
+    border: none;
+}
