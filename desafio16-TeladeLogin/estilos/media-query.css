@@ -1,0 +1,122 @@
+@charset "UTF=8";
+
+:root {
+    --corPrincipal: #F2C572;
+    --cor02: #0C0D0A;
+    --corSecundaria: #BFBFBF;
+    --cor04:#F29C72;
+    --cor05:#F2B372;
+}
+
+@media screen and (min-width: 768px) and (max-width:992px) {
+    body {
+        background-image: linear-gradient( var(--corPrincipal), var(--cor04));
+    }
+
+    main {
+        background: black url(../imagens/xicaramarela.jpg) no-repeat center fixed;
+        background-size: cover;
+        width: 90vw;
+        height: 70vh;
+
+    }
+
+    section {
+        position: relative;
+        left: 0px;
+        top: 0px;
+
+        width: 90vw;
+        height: 70vh;
+    }
+
+    section#login-web {
+        position: relative;
+        top: 0;
+        left: 40vw;
+
+        box-sizing: border-box;
+        height: 70vh;
+        width: 50vw;
+    
+        background-color: white;
+    
+        padding: 20px;
+    
+        border-radius: 0 10px 10px 0px;
+        
+    
+    }
+
+    section h1 {
+        font-size: 3em;
+    }
+
+    form input.dados {
+        width: 60vw;
+        max-width: 36vw;
+        
+    }
+
+    .botao {
+        max-width: 44vw;
+    }
+    
+}
+
+@media screen and (min-width: 992px) {
+    body {
+        background-image: linear-gradient( var(--corPrincipal), var(--cor04));
+    }
+    
+    main {
+        background: black url(../imagens/xicaramarela.jpg) no-repeat;
+        background-size: cover;
+        background-attachment: fixed;
+        width: 90vw;
+        height: 70vh;
+
+    }
+
+    section {
+        position: relative;
+        left: 0px;
+        top: 0px;
+
+        width: 90vw;
+        height: 70vh;
+    }
+
+    section#login-web {
+        position: relative;
+        top: 0;
+        left: 0;
+
+        box-sizing: border-box;
+        height: 70vh;
+        width: 46.55vw;
+    
+        background-color: white;
+    
+        padding: 20px;
+    
+        border-radius: 10px 0 0px 10px;
+        
+    
+    }
+
+    section h1 {
+        font-size: 3em;
+    }
+
+    form input.dados {
+        width: 60vw;
+        max-width: 36vw;
+        
+    }
+
+    .botao {
+        max-width: 42vw;
+    }
+
+}
