@@ -1,0 +1,145 @@
+@charset "UTF-8";
+
+:root {
+    --verdin: #49a09d;
+    --roxin: #5f2c82;
+}
+
+* {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body, html {
+    background-color: var(--roxin);
+    height: 100vh;
+    width: 100vw;
+}
+
+main { 
+    position: relative;
+    height: 100vh;
+    width: 100vw;
+}
+
+section#login {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    
+    overflow: hidden;/*Tudo o que vazar para fora vai sumir, vai ficar escondido. Então não tem como ver a parte que foi vazada, só a que ficou la dentro*/
+
+    background-color: white;
+    width: 250px;
+    height: 515px;
+    border-radius: 20px;
+
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+
+
+    transform: translate(-50%,-50%);
+    transition: width 0.3s, height 0.3s; /*faz com que a alteração de tamanho ocorra nesse tempo, criando uma animaçãozinha.*/
+    transition-timing-function: ease; /*isso da uma suavizada na animação, pra não deixar ela tão brusca*/
+}
+
+section#login > div#imagem {
+    background: var(--roxin) url(../imagens/metal.jpg) no-repeat;
+    background-size: cover;
+    background-position: left bottom;
+    height: 200px;
+
+    display: block;
+}
+
+section#login > div#formulario {
+    padding: 10px;
+
+    display: block;
+}
+
+div#formulario > h1 {
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+div#formulario > p {
+    font-size: 0.8em;
+}
+
+form > div.campo {
+    background-color: var(--roxin);
+    width: 100%;
+    display: block;
+    height: 40px;
+    border-radius: 8px;
+    margin: 5px 0;
+    border: 2px solid var(--roxin);
+}
+
+div.campo > span { /*Encaixou os span(icones)*/
+    color: white;
+    font-size: 2em;
+    width: 40px;
+    padding: 5px;
+}
+
+div.campo > input {
+    background-color: #65dbd7;
+    font-size: 1em;
+    width: calc(100% - 45px); /*da pra fazer conta pra poder encaixar as coisas*/
+    height: 100%;
+    border: none;
+    border-radius: 8px;
+    padding: 4px;
+    transform: translatey(-12px); /*sempre deixe todas as transiosion e transform por último, pois ai elas são feitas quando o resto ja carregou e não tem um efeito bugado quando faz*/
+}
+
+div.campo > input:focus-within { /*Quando eu estiver digitando*/
+    background-color: white;
+}
+
+div.campo > label {
+    display: none;
+}
+
+form > input[type=submit] /*OLOKO ta pra configurar coisas com valores especificos nos parametros, ou com parametros*/ {
+    display: block;
+    font-size: 1em;
+    width: 100%;
+    height: 40px;
+    background-color: var(--verdin);
+    color: white;
+    border: none;
+    border-radius: 5px;
+}
+
+form > input[type=submit]:hover {
+    background-color: #33706e;
+    cursor: pointer;
+}
+
+form > a.botao {
+    display: block;
+    text-align: center;
+    font-size: 1em;
+    width: 100%;
+    height: 40px;
+    background-color: white;
+    color: #33706e;
+    border: 1px solid var(--verdin);
+    border-radius: 7px;
+    text-decoration: none;
+    padding-top: 5px;
+    margin-top: 5px;
+}
+
+form > a.botao:hover {
+    background-color: #65dbd7;
+}
+
+form > a.botao > span {
+    font-size: 0.8em;
+
+}

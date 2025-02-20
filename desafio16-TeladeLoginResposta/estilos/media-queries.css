@@ -1,0 +1,58 @@
+@charset "UTF-8";
+
+:root {
+    --verdin: #49a09d;
+    --roxin: #5f2c82;
+}
+
+@media screen and (min-width: 768px) and (max-width: 992px) {
+    body {
+        background-image: linear-gradient(to top, var(--verdin), var(--roxin));
+    }
+    
+    section#login {
+        width: 90vw;
+        height: 280px;
+    }
+
+    section#login > div#imagem {
+        float: left;
+        width: 30%;
+        height: 100%;
+    }
+
+    section#login > div#formulario {
+        float: right; /*Não sei o que mas com ele da pra mover as coisas, por exemplo colocar a imagem na esquerda e essa parte do login na direita.*/
+        width: 70%;
+    }
+}
+
+@media screen and (min-width: 992px) {
+    body {
+        background-image: linear-gradient(to top, var(--verdin), var(--roxin));
+    }
+    
+    section#login {
+        width: 990px;
+        height: 350px;
+    }
+    section#login > div#imagem {
+        float: right;
+        width: 50%;
+        height: 100%;
+    }
+
+    section#login > div#formulario {
+        float: left;
+        width: 50%;
+    }
+
+    div#formulario > h1 {
+        font-size: 2em;
+    }
+
+    div#formulario > p {
+        font-size: 1em;
+        margin: 10px 0;
+    }
+}
